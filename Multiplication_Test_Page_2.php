@@ -1,4 +1,5 @@
 <html>
+<!-- Author JT Vinolus -->
 <link rel="stylesheet" href="styles.css">
 <body>
 	<title>Multiplication Test</title>
@@ -13,13 +14,14 @@ $num2 = $_SESSION["number2"];
 $number3 = $_POST["number3"];
 
 if ($number3 == ($num1 * $num2)) {
-    $state="You are Right!!! Good Job.";
+    $state="You are Right!!! ".$num1." x ".$num2." equals ".($num1 * $num2).". Good Job.";
     $submitButton= "More Practice?";
 	
-} else {
-    $state= "You are Wrong. The correct answer is ".($num1 * $num2);
-    $submitButton= "Try Again!";
-	   
+} 
+else 
+{
+$state= "Sorry. You are Wrong. ".$num1." x ".$num2." equals ".($num1 * $num2).". You inputed ".$number3."."; 
+$submitButton= "Try Again!";
 }
 ?>
 	<p><?php echo $state ?></p>

@@ -1,4 +1,5 @@
 <html>
+<!-- Author JT Vinolus -->
 <link rel="stylesheet" href="styles.css">
 <body>
 	<title>Multiplication Test</title>
